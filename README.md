@@ -2,7 +2,7 @@
 
 Este repositório contém a resolução do desafio de transição do modelo relacional (SQL) para o modelo NoSQL distribuído, focado na otimização de consultas da plataforma FastDelivery.
 
-## 🧠 Parte 1 – Análise do Cenário Atual
+## Parte 1 – Análise
 
 1. **Quais consultas exigem muitos JOINs?**
    As consultas que listam os itens de um pedido (dependem de PEDIDOS, ITENS e PRODUTOS) e o histórico de pedidos recentes por cliente.
@@ -18,7 +18,7 @@ Este repositório contém a resolução do desafio de transição do modelo rela
 
 ---
 
-## 📐 Parte 2 – Nova Modelagem
+##  Parte 2 – Nova Modelagem
 
 Abaixo estão as 3 tabelas criadas no Cassandra, modeladas com foco exclusivo na performance das consultas (Query-First):
 
@@ -42,7 +42,7 @@ Abaixo estão as 3 tabelas criadas no Cassandra, modeladas com foco exclusivo na
 
 ---
 
-## 💻 Parte 3 – Implementação (Python)
+## Parte 3 – Implementação
 
 O script `main.py` presente neste repositório executa de forma automatizada:
 1. A criação do Keyspace `fastdelivery`.
